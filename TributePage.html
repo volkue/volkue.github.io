@@ -1,0 +1,143 @@
+<!-- First exam project for CSS course 
+    https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Robert Oppenheimer</title>
+    <style>
+        body {
+            background-color: rgb(190, 235, 241);
+            font-size: 1.2rem;
+            font-family: sans-serif;
+            line-height: 1.5rem;
+        }
+        header {
+            font-weight: bold;
+            text-align: center;
+        }
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        img {
+            display: block;
+            width: 99%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        #tribute-info {
+            max-width: 40%;
+            margin: 0 auto;
+            line-height: 2rem;
+        }
+        @media (max-width: 600px){
+                      #tribute-info {
+            max-width: 90%;
+        }
+        body {
+            background-color: rgb(210, 235, 241);
+            font-size: 1rem;
+            font-family: sans-serif;
+            line-height: 1.1rem;}
+    }
+    
+        #img-div {
+            max-width: 90%;
+            margin: 1rem auto;
+            text-align: center;
+            background-color: azure;
+            padding: 10px;
+        }
+        #img-caption{
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        #tribute-info-title{
+            font-weight: bold;
+            text-align: center;  
+        }
+        footer {
+            font-weight: bold;
+            text-align: center;
+        }
+        #quote {
+            font-style: italic;
+            line-height: 1.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div id="title">
+                <h1>J. Robert Oppenheimer</h1>
+            </div>
+            <div>father of the atomic bomb</div>
+        </header>
+        <main>
+            <div id="img-div">
+                <img src="https://www.thoughtco.com/thmb/-aH0sfsnFVrUqDWB01mAFVKJWj8=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/scientists-visit-atomic-exhibit-515335876-5c6f614b46e0fb0001b681bb.jpg"
+                    alt="J. Robert Oppenheimer, right" id="image">
+                <div id="img-caption">From right: J. Robert Oppenheimer, Professor. H. D. Smythe, General Nichols in
+                    1946 looking at a photograph of the atomic blast at Hiroshima. The atomic bomb was developed in the
+                    Manhattan Project.</div>
+            </div>
+            <div id="tribute-info">
+
+                <div id="tribute-info-title">Here's a time line of Oppenheimer's life:</div>
+                <ul>
+                    <li><strong>1904</strong>- born New York City on April 22</li>
+                    <li><strong>1911</strong>-entered the Ethical Culture Society School</li>
+                    <li><strong>1922</strong>-entered Harvard College</li>
+                    <li><strong>1924</strong>-he had been accepted into Christ's College, Cambridge</li>
+                    <li><strong>1926</strong>-left Cambridge for the University of Göttingen to study under Max Born</li>
+                    <li><strong>1927</strong>-obtained his Doctor of Philosophy degree</li>
+                    <li><strong>1942</strong>-the US Army established the Manhattan Project to handle its part in the
+                        atom bomb project and began the process of transferring responsibility from the Office of
+                        Scientific Research and Development to the military.[96] In September, Groves was appointed
+                        director of what became known as the Manhattan Project.[97] He selected Oppenheimer to head the
+                        project's secret weapons laboratory. </li>
+                    <li><strong>1943</strong>-development efforts were directed to a plutonium gun-type fission weapon
+                        called "Thin Man"</li>
+                    <li><strong>1944</strong>-Oppenheimer abandoned the gun design in favor of an implosion-type weapon
+                    </li>
+                    <li><strong>1945</strong>-an Interim Committee was created to advise and report on wartime and
+                        postwar policies regarding the use of nuclear energy. The Interim Committee in turn established
+                        a scientific panel consisting of Arthur Compton, Fermi, Lawrence and Oppenheimer to advise it on
+                        scientific issues</li>
+                    <li><strong>1946</strong>-for his services as director of Los Alamos, Oppenheimer was awarded the
+                        Medal for Merit from President Harry S Truman</li>
+                    <li><strong>1967</strong>-Oppenheimer was a chain smoker who was diagnosed with throat cancer.He
+                        fell into a coma on February 15, 1967, and died at his home in Princeton, New Jersey, on
+                        February 18</li>
+                </ul>
+                <div id="quote">
+                    
+                    <figure>
+                        <blockquote>
+                            "If the radiance of a thousand suns<br>
+                            Were to burst at once into the sky <br>
+                            That would be like the splendour of the Mighty One...<br>
+                            I am become Death, The shatterer of worlds."
+                        </blockquote>
+                        <figcaption>― J. Robert Oppenheimer,</figcaption>[Quoted from the Bhagavad Gita after the
+                        bombing of Hiroshima and Nagasaki.]
+                    </figure>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>If you have time, you should read more about this incredible human being on his
+                <a href="https://en.wikipedia.org/wiki/J._Robert_Oppenheimer" id="tribute-link"
+                    target="_blank">Wikipedia entry</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
